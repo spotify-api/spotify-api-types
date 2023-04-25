@@ -8,8 +8,6 @@ export type SavedShow = Saved<'show', Show>;
 
 /**
  * The structure containing the brief details of the Spotify Show.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-simplifiedshowobject
  */
 export interface Show extends SimplifiedShow {
     /** A list of the show’s episodes. */
@@ -18,8 +16,6 @@ export interface Show extends SimplifiedShow {
 
 /**
  * The structure containing the simplified details of the Spotify Show.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-simplifiedshowobject
  */
 export interface SimplifiedShow {
     /** A list of the countries in which the show can be played, identified by their ISO 3166-1 alpha-2 code. */

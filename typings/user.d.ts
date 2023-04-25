@@ -93,8 +93,6 @@ export interface AccessToken {
 
 /**
  * The cursor paging object for followed artists.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/get-followed
  */
 export interface FollowedArtistCursorPaging {
     /** A link to the Web API endpoint returning the full result of the request. */
@@ -118,8 +116,6 @@ export interface FollowedArtistCursorPaging {
 
 /**
  * An object containing artists followed by the user.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/get-followed
  */
 export interface FollowedArtistsResults {
     /** The paging object giving you an array of artists followed by the user. */

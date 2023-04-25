@@ -8,8 +8,6 @@ export type SavedEpisode = Saved<'episode', Episode>;
 
 /**
  * The structure containing the brief details of the Spotify episode.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-episodeobject
  */
 export interface Episode extends SimplifiedEpisode {
     /** The show on which the episode belongs. */
@@ -18,8 +16,6 @@ export interface Episode extends SimplifiedEpisode {
 
 /**
  * The structure containing the simplified details of the Spotify episode.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-simplifiedepisodeobject
  */
 export interface SimplifiedEpisode {
     /** A URL to a 30 second preview (MP3 format) of the episode. null if not available. */
@@ -66,8 +62,6 @@ export interface SimplifiedEpisode {
 
 /**
  * An object containing the resume point.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-resumepointobject
  */
 export interface ResumePoint {
     /** Whether or not the episode has been fully played by the user. */

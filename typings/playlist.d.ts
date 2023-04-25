@@ -5,8 +5,6 @@ import { ExternalUrl, Image, Paging, SpotifyType } from "./global";
 
 /**
  * The structure containing the reference for the tracks of the playlist..
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-playlisttracksrefobject
  */
 export interface PlaylistTracksReference {
     /** A link to the Web API endpoint where full details of the playlist’s tracks can be retrieved. */
@@ -17,8 +15,6 @@ export interface PlaylistTracksReference {
 
 /**
  * The structure containing the details of the Spotify Track in the playlist..
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-playlisttrackobject
  */
 export interface PlaylistTrack {
     /** The date and time the track or episode was added.  */
@@ -33,8 +29,6 @@ export interface PlaylistTrack {
 
 /**
  * The structure containing the simplified details of the Spotify Playlist.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-simplifiedplaylistobject
  */
 export interface SimplifiedPlaylist {
     /** True if the owner allows other users to modify the playlist. */
@@ -65,8 +59,6 @@ export interface SimplifiedPlaylist {
 
 /**
  * The structure containing the brief details of the Spotify Playlist.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-playlistobject
  */
 export interface Playlist extends Omit<SimplifiedPlaylist, 'tracks'> {
     /** Information about the followers of the playlist. */

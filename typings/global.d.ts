@@ -17,8 +17,6 @@ export type SearchType = 'album' | 'artist' | 'track' |  'show' | 'episode';
 
 /**
  * The spotify object containing the details of an image.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-imageobject
  */
 export interface Image {
     /** The image height in pixels. If unknown: null or not returned. */
@@ -31,8 +29,6 @@ export interface Image {
 
 /**
  * The external urls object which contains the spotify url within it.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-externalurlobject
  */
 export interface ExternalUrl {
     /** The Spotify URL for the object. */
@@ -41,8 +37,6 @@ export interface ExternalUrl {
 
 /**
  * The external ids object which contains the spotify id within it.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-externalidobject
  */
 export interface ExternalID {
     /** International Article Number */
@@ -75,8 +69,6 @@ export interface Paging<T> {
 
 /**
  * The copyright object contains the type and the name of copyright.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-copyrightobject
  */
 export interface Copyright {
     /** The text of copyright. */
@@ -95,8 +87,6 @@ export interface Restriction {
 
 /**
  * The error response sent by the spotify api during unusual status codes.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-errorobject
  */
 export interface ErrorResponse {
     /** A short description of the cause of the error. */

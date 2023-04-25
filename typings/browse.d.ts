@@ -3,8 +3,6 @@ import { SimplifiedTrack, TuneableTrack } from "./track";
 
 /**
  * An object containing details about the spotify category.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-categoryobject
  */
 export interface Category {
     /** A link to the Web API endpoint returning full details of the category. */
@@ -19,8 +17,6 @@ export interface Category {
 
 /**
  * The spotify recommendation seed object.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-recommendationseedobject
  */
 export interface RecommendationSeed {
     /** The number of tracks available after min_* and max_* filters have been applied. */
@@ -39,8 +35,6 @@ export interface RecommendationSeed {
 
 /**
  * The collection of recommendation seed objects with tracks provided from the spotify api..
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-recommendationsobject
  */
 export interface Recommendations {
     /** An array of recommendation seed objects. */

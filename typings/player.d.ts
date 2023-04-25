@@ -32,8 +32,6 @@ export type PlayerErrorReason =
 
 /**
  * An object containing the details of a device.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-deviceobject
  */
 export interface Device {
     /** The device ID. */
@@ -54,8 +52,6 @@ export interface Device {
 
 /**
  * The context object of the player.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-contextobject
  */
 export interface PlayerContext {
     /** External URLs for this context. */
@@ -70,8 +66,6 @@ export interface PlayerContext {
 
 /**
  * The disallows from the CurrentlyPlayingContext object.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-disallowsobject
  */
 export interface ContextDisallows {
     /** Interrupting playback. Optional field. */
@@ -98,8 +92,6 @@ export interface ContextDisallows {
 
 /**
  * The currently playing context of the player api.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-currentlyplayingcontextobject
  */
 export interface CurrentlyPlayingContext extends CurrentlyPlaying {
     /** Allows to update the user interface based on which playback actions are available within the current context. */
@@ -114,8 +106,6 @@ export interface CurrentlyPlayingContext extends CurrentlyPlaying {
 
 /**
  * The currently playing object of the player api.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-currentlyplayingobject
  */
 export interface CurrentlyPlaying {
     /** The context. */
@@ -134,8 +124,6 @@ export interface CurrentlyPlaying {
 
 /**
  * The cursor object of the player api.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-cursorobject
  */
 export interface Cursor {
     /** The cursor to use as key to find the next page of items. */
@@ -145,8 +133,6 @@ export interface Cursor {
 
 /**
  * The cursor paging object of the player api.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-cursorpagingobject
  */
 export interface CursorPaging<T> extends Omit<Paging<T>, 'offset' | 'previous'> {
     /** The cursors used to find the next set of items. */
@@ -155,8 +141,6 @@ export interface CursorPaging<T> extends Omit<Paging<T>, 'offset' | 'previous'> 
 
 /**
  * The devices object of the player api.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-devicesobject
  */
 export interface Devices {
     /** A list of 0..n Device objects. */
@@ -165,8 +149,6 @@ export interface Devices {
 
 /** 
  * The recently played object which is returned by the [Player.getRecentlyPlayed] function. 
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recently-played
  */
 export interface RecentlyPlayed {
     /** The cursors to check other pages of recently played. */
@@ -190,8 +172,6 @@ export interface RecentlyPlayed {
 
 /**
  * The play history object of the player api.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-playhistoryobject
  */
 export interface PlayHistory {
     /** The context the track was played from. */
@@ -204,8 +184,6 @@ export interface PlayHistory {
 
 /**
  * The error response sent by the spotify player api during unusual status codes.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-playererrorobject
  */
 export interface PlayerErrorResponse extends ErrorResponse {
     /** The reason for the error. */
