@@ -3,6 +3,7 @@ import { Track } from "./track";
 import { SimplifiedAlbum } from "./album";
 import { SimplifiedEpisode } from "./episode";
 import { SimplifiedShow } from "./show";
+import { SimplifiedPlaylist } from "./playlist";
 
 /**
  * All the spotify element types
@@ -54,8 +55,6 @@ export interface ExternalID {
 
 /**
  * The paging object is a form of collection of items from the spotify api.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-pagingobject
  */
 export interface Paging<T> {
     /** A link to the Web API endpoint returning the full result of the request. */
@@ -65,11 +64,11 @@ export interface Paging<T> {
     /** The maximum number of items in the response (as set in the query or by default). */
     limit: number;
     /** URL to the next page of items. (null if none) */
-    next: string;
+    next?: string;
     /** The offset of the items returned (as set in the query or by default) */
     offset: number;
     /** URL to the previous page of items. (null if none) */
-    previous: string;
+    previous?: string;
     /** The total number of items available to return. */
     total: number;
 }
@@ -123,6 +122,10 @@ export interface SearchContent {
     tracks?: Paging<Track>;
     /** The artists search results. */
     artists?: Paging<Artist>;
-    /** the album search results. */
+    /** The album search results. */
     albums?: Paging<SimplifiedAlbum>;
+    /** The playlist search results. */
+    playlists?: Paging<SimplifiedPlaylist>;
+
+    // audiobooks...
 }

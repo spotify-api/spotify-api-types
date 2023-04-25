@@ -1,3 +1,4 @@
+import { Artist } from "./artist";
 import { SpotifyType, Image, ExternalUrl } from "./global";
 
 /**
@@ -12,8 +13,6 @@ export type AccessTokenType = "bearer";
 
 /**
  * The spotify api object containing the details of the followers of a user.
- *
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-followersobject
  */
 export interface Followers {
     /** The api url where you can get the list of followers. This will be null as the spotify api does not supports it at the moment. */
@@ -90,4 +89,39 @@ export interface AccessToken {
     token_type: AccessTokenType;
     /** The time after which the access token expires */
     expires_in: number;
+}
+
+/**
+ * The cursor paging object for followed artists.
+ * 
+ * @see https://developer.spotify.com/documentation/web-api/reference/get-followed
+ */
+export interface FollowedArtistCursorPaging {
+    /** A link to the Web API endpoint returning the full result of the request. */
+    href: string;
+    /** The maximum number of items in the response (as set in the query or by default). */
+    limit: number;
+    /** URL to the next page of items. (null if none) */
+    next: string;
+    /** The cursors used to find the next set of items. */
+    cursors: {
+        /** The cursor to use as key to find the next page of items. */
+        after: string;
+        /** The cursor to use as key to find the previous page of items. */
+        before: string;
+    };
+    /** The total number of items available to return. */
+    total: number;
+    /** The requested data. */
+    items: Artist[];
+}
+
+/**
+ * An object containing artists followed by the user.
+ * 
+ * @see https://developer.spotify.com/documentation/web-api/reference/get-followed
+ */
+export interface FollowedArtistsResults {
+    /** The paging object giving you an array of artists followed by the user. */
+    artists: FollowedArtistCursorPaging;
 }

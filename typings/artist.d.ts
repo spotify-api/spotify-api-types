@@ -3,8 +3,6 @@ import { Followers } from "./user";
 
 /**
  * The structure containing the simplified details of the Spotify Artist.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-simplifiedartistobject
  */
 export interface SimplifiedArtist {
     /** Known external URLs for this artist. */
@@ -23,8 +21,6 @@ export interface SimplifiedArtist {
 
 /**
  * The structure containing the entire details of the Spotify Artist.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-artistobject
  */
 export interface Artist extends SimplifiedArtist {
     /** Information about the followers of the artist. */

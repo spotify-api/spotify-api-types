@@ -19,8 +19,6 @@ export type SavedAlbum = Saved<'album', Album>
 
 /**
  * The spotify object containing the brief details of the Spotify Album.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-albumobject
  */
 export interface Album extends Omit<SimplifiedAlbum, 'album_group'> {
     /** The artists of the album. */
@@ -41,8 +39,6 @@ export interface Album extends Omit<SimplifiedAlbum, 'album_group'> {
 
 /**
  * The spotify object containing the simplified details of the Spotify Album.
- * 
- * @see https://developer.spotify.com/documentation/web-api/reference/#object-simplifiedalbumobject
  */
 export interface SimplifiedAlbum {
     /** The field is present when getting an artist’s albums. */
