@@ -56,7 +56,7 @@ export interface SimplifiedTrack {
 }
 
 /**
- * The structure containing the brief details of the Spotify Track.
+ * The structure containing the complete details of the Spotify Track.
  *
  * @see https://developer.spotify.com/documentation/web-api/reference/#object-trackobject
  */

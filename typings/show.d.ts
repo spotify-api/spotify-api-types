@@ -7,7 +7,7 @@ import { Copyright, ExternalUrl, Image, Paging, Saved, SpotifyType } from "./glo
 export type SavedShow = Saved<'show', Show>;
 
 /**
- * The structure containing the brief details of the Spotify Show.
+ * The structure containing the complete details of the Spotify Show.
  */
 export interface Show extends SimplifiedShow {
     /** A list of the show’s episodes. */

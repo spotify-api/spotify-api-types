@@ -7,7 +7,7 @@ import { ExternalUrl, Image, Restriction, Saved, SpotifyType } from "./global";
 export type SavedEpisode = Saved<'episode', Episode>;
 
 /**
- * The structure containing the brief details of the Spotify episode.
+ * The structure containing the complete details of the Spotify episode.
  */
 export interface Episode extends SimplifiedEpisode {
     /** The show on which the episode belongs. */

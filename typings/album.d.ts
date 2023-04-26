@@ -18,7 +18,7 @@ export type AlbumGroup = AlbumType | 'appears_on';
 export type SavedAlbum = Saved<'album', Album>
 
 /**
- * The spotify object containing the brief details of the Spotify Album.
+ * The spotify object containing the complete details of the Spotify Album.
  */
 export interface Album extends Omit<SimplifiedAlbum, 'album_group'> {
     /** The artists of the album. */

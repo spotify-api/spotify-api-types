@@ -58,7 +58,7 @@ export interface SimplifiedPlaylist {
 }
 
 /**
- * The structure containing the brief details of the Spotify Playlist.
+ * The structure containing the complete details of the Spotify Playlist.
  */
 export interface Playlist extends Omit<SimplifiedPlaylist, 'tracks'> {
     /** Information about the followers of the playlist. */
