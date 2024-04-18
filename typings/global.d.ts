@@ -4,6 +4,7 @@ import { SimplifiedAlbum } from "./album";
 import { SimplifiedEpisode } from "./episode";
 import { SimplifiedShow } from "./show";
 import { SimplifiedPlaylist } from "./playlist";
+import { SimplifiedAudiobook } from "./audiobook";
 
 /**
  * All the spotify element types
@@ -13,7 +14,7 @@ export type SpotifyType = 'user' | 'episode' | 'playlist' | 'show' | 'track' | '
 /**
  * All the spotify search types.
  */
-export type SearchType = 'album' | 'artist' | 'track' |  'show' | 'episode';
+export type SearchType = 'album' | 'artist' | 'track' |  'show' | 'episode' | 'playlist' | 'audiobook';
 
 /**
  * The spotify object containing the details of an image.
@@ -116,6 +117,6 @@ export interface SearchContent {
     albums?: Paging<SimplifiedAlbum>;
     /** The playlist search results. */
     playlists?: Paging<SimplifiedPlaylist>;
-
-    // audiobooks...
+    /** The audiobook search results. */
+    audiobooks?: Paging<SimplifiedAudiobook>;
 }

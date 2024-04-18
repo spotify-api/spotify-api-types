@@ -78,20 +78,6 @@ export interface PublicUser {
 }
 
 /**
- * The spotify api object containing the user's access token.
- *
- * @see https://developer.spotify.com/documentation/general/guides/authorization/client-credentials/
- */
-export interface AccessToken {
-    /** The token used to access the Spotify Web API */
-    access_token: string;
-    /** The type of token which is of type bearer */
-    token_type: AccessTokenType;
-    /** The time after which the access token expires */
-    expires_in: number;
-}
-
-/**
  * The cursor paging object for followed artists.
  */
 export interface FollowedArtistCursorPaging {
@@ -120,4 +106,18 @@ export interface FollowedArtistCursorPaging {
 export interface FollowedArtistsResults {
     /** The paging object giving you an array of artists followed by the user. */
     artists: FollowedArtistCursorPaging;
+}
+
+/**
+ * The spotify api object containing the user's access token.
+ *
+ * @see https://developer.spotify.com/documentation/general/guides/authorization/client-credentials/
+ */
+export interface AccessToken {
+    /** The token used to access the Spotify Web API */
+    access_token: string;
+    /** The type of token which is of type bearer */
+    token_type: AccessTokenType;
+    /** The time after which the access token expires */
+    expires_in: number;
 }

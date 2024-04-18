@@ -22,7 +22,7 @@ export interface Chapter extends SimplifiedChapter {
  */
 export interface SimplifiedAudiobook {
 	/** The authors of the auidobook. */
-	authors: { name: string }[];
+	authors: Username[];
 	/** The markets where the audiobook is available. */
 	available_markets: string[];
 	/** The copyright statements of the audiobook. */
@@ -50,7 +50,7 @@ export interface SimplifiedAudiobook {
 	/** The name of the audiobook. */
 	name: string;
 	/** The narrators of the audiobook. */
-	narrators: { name: string }[];
+	narrators: Username[];
 	/** The publisher of the audiobook. */
 	publisher: string;
 	/** The type of the audiobook. */
@@ -105,4 +105,12 @@ export interface SimplifiedChapter {
 	type: "episode";
     /** The Spotify URI for the chapter. */
     uri: string;
+}
+
+/**
+ * The structure containing the name of a particular user.
+ */
+export interface Username {
+	/** The name of the user. */
+	name: string;
 }
