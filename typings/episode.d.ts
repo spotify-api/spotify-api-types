@@ -1,5 +1,5 @@
 import { SimplifiedShow } from "./show";
-import { ExternalUrl, Image, Restriction, Saved, SpotifyType } from "./global";
+import { ExternalUrl, Image, Restriction, Saved } from "./global";
 
 /**
  * The saved episode object.
@@ -55,7 +55,7 @@ export interface SimplifiedEpisode {
     /** The user’s most recent position in the episode. Set if the supplied access token is a user token and has the scope ‘user-read-playback-position’. */
     resume_point?: ResumePoint;
     /** The object type: “episode”. */
-    type: SpotifyType;
+    type: 'episode';
     /** The Spotify URI for the episode */
     uri: string;
 }

@@ -1,4 +1,4 @@
-import { ExternalUrl, Image, SpotifyType } from "./global";
+import { ExternalUrl, Image } from "./global";
 import { Followers } from "./user";
 
 /**
@@ -14,7 +14,7 @@ export interface SimplifiedArtist {
     /** The name of the artist. */
     name: string;
     /** The object type: "artist". */
-    type: SpotifyType;
+    type: 'artist';
     /** The Spotify URI for the artist. */
     uri: string;
 }

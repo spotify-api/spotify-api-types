@@ -1,7 +1,7 @@
 import { Followers, PublicUser } from "./user";
 import { Track } from "./track";
 import { Episode } from "./episode";
-import { ExternalUrl, Image, Paging, SpotifyType } from "./global";
+import { ExternalUrl, Image, Paging } from "./global";
 
 /**
  * The structure containing the reference for the tracks of the playlist..
@@ -54,7 +54,7 @@ export interface SimplifiedPlaylist {
     /** The Spotify URI for the playlist. */
     uri: string;
     /** The object type: “playlist” */
-    type: SpotifyType;
+    type: 'playlist';
 }
 
 /**

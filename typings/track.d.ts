@@ -50,7 +50,7 @@ export interface SimplifiedTrack {
 	/** The number of the track. If an album has several discs, the track number is the number on the specified disc. */
 	track_number: number;
 	/** The object type: “track”. */
-	type: SpotifyType;
+	type: 'track';
 	/** The Spotify URI for the track. */
 	uri: string;
 }

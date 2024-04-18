@@ -1,6 +1,6 @@
 import { Artist, SimplifiedArtist } from "./artist";
 import { SimplifiedTrack } from "./track";
-import { Copyright, ExternalID, ExternalUrl, Image, SpotifyType, Restriction, Saved, Paging } from "./global";
+import { Copyright, ExternalID, ExternalUrl, Image, Restriction, Saved, Paging } from "./global";
 
 /**
  * The types of album.
@@ -68,7 +68,7 @@ export interface SimplifiedAlbum {
     /** The total number of tracks in the album. */
     total_tracks: number;
     /** The object type which will be 'album'. */
-    type: SpotifyType;
+    type: 'album';
     /** The Spotify URI for the album. */
     uri: string;
 }

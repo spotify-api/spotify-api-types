@@ -1,5 +1,5 @@
 import { Artist } from "./artist";
-import { SpotifyType, Image, ExternalUrl } from "./global";
+import { Image, ExternalUrl } from "./global";
 
 /**
  * The product type in the User object.
@@ -68,7 +68,7 @@ export interface PublicUser {
     /** The Spotify URI for the user. */
     uri: string;
     /** The Spotify object type which will be 'User'. */
-    type: SpotifyType;
+    type: 'user' | 'artist';
     /** The user’s profile image. */
     images?: Image[];
     /** Information about the followers of the user. */

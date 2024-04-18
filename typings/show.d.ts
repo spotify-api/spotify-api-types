@@ -1,5 +1,5 @@
 import { SimplifiedEpisode } from "./episode";
-import { Copyright, ExternalUrl, Image, Paging, Saved, SpotifyType } from "./global";
+import { Copyright, ExternalUrl, Image, Paging, Saved } from "./global";
 
 /**
  * The saved show object.
@@ -47,7 +47,7 @@ export interface SimplifiedShow {
     /** The publisher of the show. */
     publisher: string;
     /** The object type: “show”. */
-    type: SpotifyType;
+    type: 'show';
     /** The Spotify URI for the show. */
     uri: string;
 }
