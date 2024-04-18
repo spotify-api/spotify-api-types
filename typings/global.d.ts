@@ -69,6 +69,25 @@ export interface Paging<T> {
 }
 
 /**
+ * The cursor object having before and after keys of the items.
+ */
+export interface Cursor {
+    /** The cursor to use as key to find the next page of items. */
+    after: string;
+    /** The cursor to use as key to find the previous page of items. */
+    before: string;
+}
+
+
+/**
+ * The paging object but with a additional cursor field.
+ */
+export interface CursorPaging<T> extends Omit<Paging<T>, 'offset' | 'previous'> {
+    /** The cursors used to find the next set of items. */
+    cursors: Cursor;
+}
+
+/**
  * The copyright object contains the type and the name of copyright.
  */
 export interface Copyright {

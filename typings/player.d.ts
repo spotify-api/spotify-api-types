@@ -1,6 +1,6 @@
 import { SimplifiedTrack, Track } from "./track";
 import { Episode } from "./episode";
-import { ErrorResponse, ExternalUrl, Paging, SpotifyType } from "./global";
+import { ErrorResponse, ExternalUrl, Cursor, SpotifyType } from "./global";
 
 /**
  * The repeat state of the context.
@@ -120,23 +120,6 @@ export interface CurrentlyPlaying {
     item: Track | Episode | null;
     /** Unix Millisecond Timestamp when data was fetched. */
     timestamp: number;
-}
-
-/**
- * The cursor object of the player api.
- */
-export interface Cursor {
-    /** The cursor to use as key to find the next page of items. */
-    after: string;
-}
-
-
-/**
- * The cursor paging object of the player api.
- */
-export interface CursorPaging<T> extends Omit<Paging<T>, 'offset' | 'previous'> {
-    /** The cursors used to find the next set of items. */
-    cursors: Cursor;
 }
 
 /**

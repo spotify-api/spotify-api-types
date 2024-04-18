@@ -111,7 +111,7 @@ export interface FollowedArtistsResults {
 /**
  * The spotify api object containing the user's access token.
  *
- * @see https://developer.spotify.com/documentation/general/guides/authorization/client-credentials/
+ * @see https://developer.spotify.com/documentation/web-api/concepts/access-token
  */
 export interface AccessToken {
     /** The token used to access the Spotify Web API */
