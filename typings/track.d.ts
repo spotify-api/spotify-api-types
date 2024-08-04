@@ -64,7 +64,7 @@ export interface Track extends SimplifiedTrack {
 	/** The album on which the track appears.  */
 	album: SimplifiedAlbum;
 	/** The artists who performed the track. Each artist object includes a link in href to more detailed information about the artist. */
-	artists: Artist[];
+	artists: SimplifiedArtist[];
 	/** Known external IDs for the track. */
 	external_ids: ExternalID;
 	/** The popularity of the track. The value will be between 0 and 100, with 100 being the most popular. */
