@@ -149,7 +149,7 @@ export interface RecentlyPlayed {
         /** The track which has been played recently. */
         track: Track,
         /** The timestamp when it was played. */
-        playedAt: string
+        played_at: string
     }[];
 }
 
